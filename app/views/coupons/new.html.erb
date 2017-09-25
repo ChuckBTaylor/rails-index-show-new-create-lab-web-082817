@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Coupon Form</h1>
+    <%= form_for(@coupon) do |f| %>
+    <%= f.label :store, "Store name:", as: "store"%>
+    <%= f.text_field :store, :id=>"store" %>
+
+    <%= f.label :coupon_code, "Coupon Code:", as: "coupon_code" %>
+    <%= f.text_field :coupon_code, :id=>"coupon_code" %>
+
+    <%= f.submit "Submit Coupon"%>
+    <% end %>
+  </body>
+</html>
